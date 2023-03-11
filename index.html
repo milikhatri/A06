@@ -1,0 +1,24 @@
+<form method="post" action="process_form.php">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="procedure_type">Procedure Type:</label>
+  <select id="procedure_type" name="procedure_type" required>
+    <option value="">Select procedure type</option>
+    <option value="Procedure A">Procedure A</option>
+    <option value="Procedure B">Procedure B</option>
+    <option value="Procedure C">Procedure C</option>
+    <option value="Procedure D">Procedure D</option>
+  </select><br>
+
+  <label for="num_appointments">Number of Appointments:</label>
+  <input type="number" id="num_appointments" name="num_appointments" min="1" required><br>
+
+  <label for="cost">Cost:</label>
+  <input type="number" id="cost" name="cost" step="0.01" min="0" required><br>
+
+  <label for="tax_rate">Tax Rate:</label>
+  <input type="number" id="tax_rate" name="tax_rate" step="0.01" min="0" required><br>
+
+  <input type="submit" value="Submit">
+</form>
